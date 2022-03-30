@@ -1,0 +1,14 @@
+ [Post-it][sala 14][Grupo 8_bits]
+
+Integrantes:
+Carlos Francisco da Rocha.
+Cauê Mustafá Assem.
+Helder Daniel Silva Araújo.
+Henos Vinícius.
+Leonardo Luniere Hatchuell.
+Marcos Vinícius Pinheiro Leite.
+Matheus Souza Queiroz.
+Pedro Papini de Araújo.
+------------------
+Resposta:
+Quando o usuario faz uma requisição (clica em link ou digita algum endereço) através de um cliente (Navegador) ele faz uma solicitação para o servidor DNS, o servidor procura a pagina (site solicitado) formata a resposta e devolve para o cliente e resgata o HTML e compila em formato visual para o usuario.
