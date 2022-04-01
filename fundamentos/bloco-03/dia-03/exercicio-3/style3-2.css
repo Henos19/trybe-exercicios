@@ -1,0 +1,18 @@
+div:hover {
+    border: 6px solid black;
+}
+#dic01 {
+    color: aqua;
+}
+#div02{
+    color: royalblue;
+}
+#div03{
+    color: greenyellow;
+}
+#div04{
+    color: blueviolet;
+}
+#div05{
+    color: bisque;
+}
