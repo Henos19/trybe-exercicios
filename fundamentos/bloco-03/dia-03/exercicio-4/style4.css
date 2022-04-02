@@ -1,0 +1,51 @@
+.lista_impar{
+    text-transform: uppercase;
+}
+.lista_par {
+    color: green;
+}
+
+h1, h2, h3 {
+    color: red;
+}
+
+h1 {
+    font-size: 40px ;
+    border: 6px solid black;
+}
+
+li {
+    font-size: 20px ;
+}
+li.lista_impar em, li.lista_par em {
+    font-weight: 900;
+}
+
+div {
+    color: blue;
+}
+.java {
+    border: 1px solid pink;
+}
+#site1:hover, #site2:hover, #site3:hover, #site4:hover, #site5:hover {
+    font-weight: 900;
+}
+#site1:hover{
+    color: orange;
+}
+#site2:hover{
+    color: green;
+}
+#site3:hover{
+    color: black;
+}
+#site4:hover{
+    color: yellow;
+}
+#site5:hover{
+    color: green;
+}
+a {
+  text-decoration: none;  
+}
+
