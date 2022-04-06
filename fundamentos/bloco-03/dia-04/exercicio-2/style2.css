@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: rgb(240, 229, 83);
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-size: larger;
+}
+#link_tree{
+    background-color: brown;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-weight: 700;
+}
+nav li {
+    display: inline-block;
+    padding-left:10px 10px;
+    margin-left: 20px;
+}
+.main {
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.section_main {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding-top: 10px;
+}
+.article-main {
+    max-width: 400px;
+    padding: 10px;
+    margin-left: 2% ;
+    margin-bottom: 10px;
+    font-size: large;
+    display: inline-block;
+
+}
+
