@@ -5,3 +5,5 @@ const patientInfo = {
   lastName: 'Santos',
 };
 const patientEmail = 'ana@email.com';
+
+console.log(typeof(patientId), typeof(isEnrolled), typeof(patientInfo), typeof(patientEmail));
