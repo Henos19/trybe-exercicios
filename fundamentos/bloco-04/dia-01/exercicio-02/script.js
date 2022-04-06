@@ -7,3 +7,5 @@ const patientInfo = {
 const patientEmail = 'ana@email.com';
 
 console.log(typeof(patientId), typeof(isEnrolled), typeof(patientInfo), typeof(patientEmail));
+//Acredito que pelo fato da variável não ter sido definida o computador entende-a como undefined. 
+console.log(typeof(patientAge));
