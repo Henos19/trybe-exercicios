@@ -7,3 +7,7 @@ console.log('Bem vinda, ' + info.personagem);
 
 info.recorrente = 'Sim';
 console.log(info.recorrente);
+
+for (let index in info){
+	console.log(index);
+}
