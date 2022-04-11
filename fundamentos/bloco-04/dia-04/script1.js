@@ -8,6 +8,11 @@ console.log('Bem vinda, ' + info.personagem);
 info.recorrente = 'Sim';
 console.log(info.recorrente);
 
-for (let index in info){
-	console.log(index);
+for (let properties in info){
+	console.log(properties);
+}
+console.log('');
+
+for (let values in info){
+	console.log(info[values]);
 }
