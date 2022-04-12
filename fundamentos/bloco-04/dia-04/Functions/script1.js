@@ -16,5 +16,5 @@ function palindrome (name) {
     }
 }
 
-let nome = 'araa';
+let nome = 'arara';
 console.log(palindrome(nome));
