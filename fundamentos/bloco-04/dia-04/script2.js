@@ -11,7 +11,7 @@ let leitor = {
     ],
   };
 
-console.log('O livor favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos[0]['titulo']);
+//console.log('O livor favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos[0]['titulo']);
 
 leitor.livrosFavoritos.push(    {
     titulo: 'Harry Potter e o Prisioneiro de Azkaban',
@@ -20,4 +20,5 @@ leitor.livrosFavoritos.push(    {
 }
 )  
 
-console.log(leitor);
+///console.log(leitor);
+console.log(leitor.nome + ' tem 2 livros favoritos: ' + leitor.livrosFavoritos[0].titulo + ' e ' + leitor.livrosFavoritos[1].titulo);
