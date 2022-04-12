@@ -1,3 +1,5 @@
+//FIz esse exercício usando o código do exercício anterior com recursos diferentes.
+
 function min(array){
     let minNumber = 100;
     for(let range of array){
