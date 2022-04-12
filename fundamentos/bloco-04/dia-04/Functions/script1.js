@@ -8,14 +8,7 @@ function reverse (name){
 
 
 function palindrome (name) {
-    let palin = true
-    for (let letter = 0 ; letter < name.length ; letter += 1) {
-        if ( name !== reverse(name)){
-            palin = false;
-        }
-    }
-
-    if (palin == false){
+    if ( name !== reverse(name)){
         return 'Não é palíndromo :('
     }
     else {
@@ -23,5 +16,5 @@ function palindrome (name) {
     }
 }
 
-let nome = 'arara';
+let nome = 'araa';
 console.log(palindrome(nome));
