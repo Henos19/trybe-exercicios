@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+      </main>
+      <script>
+          let ele1 = document.getElementById('elementoOndeVoceEsta');
+          ele1.parentElement.style.backgroundColor = "green";
+
+          ele1.firstElementChild.innerHTML = "Oi! Eu estou aqui, mundo!";
+
+          let pai = document.getElementById("pai")
+          pai.firstElementChild.innerHTML = "Opa, só estou testando!"
+
+          ele1.parentNode.firstElementChild.style.backgroundColor = "blue"
+
+          ele1.nextSibling
+          /*Não entendi a razão do nextSibling não alterar a cor de atenção. Outra coisa, quando tento adicionar algo novo uso o ele1.nextSibling, este de alguma forma atrapalha ele1.nexElementSibling*/
+          ele1.nextElementSibling.innerHTML = "Testando aqui também"
+
+          ele1.parentNode.children[2].style.backgroundColor = "yellow"
+      </script>
+</body>
+</html>
