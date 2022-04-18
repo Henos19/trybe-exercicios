@@ -28,15 +28,18 @@ function addAndRemoveTech(evento){
 input.addEventListener('input', favoriteTechName);
 
 function favoriteTechName(){
-    if (KeyboardEvent){
-        const tech = document.querySelector('.tech')
-        tech.innerHTML = input.value;
-    }
+    const tech = document.querySelector('.tech')
+    tech.innerHTML = input.value;
 }
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
+myWebpage.addEventListener('dblclick', myPort);
+
+function myPort(){
+    window.open('https://henos19.github.io/')
+}
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
