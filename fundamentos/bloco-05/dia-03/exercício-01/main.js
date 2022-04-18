@@ -44,6 +44,17 @@ function myPort(){
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
+myWebpage.addEventListener('mouseover', onColor)
+
+function onColor(){
+    myWebpage.style.color = 'red';
+}
+
+myWebpage.addEventListener('mouseout', offColor)
+
+function offColor(){
+    myWebpage.style.color = 'white';
+}
 // Segue abaixo um exemplo do uso de event.target:
 
 
