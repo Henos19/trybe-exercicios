@@ -38,3 +38,16 @@ function createMonthDays() {
 }
 
 createMonthDays();
+
+/*Obs.: é possível usar setAttribute para mudar uma id em um elemento - Talvez dê até para mudar outros marcações*/
+
+function buttonCreate(string) {
+  const buttonContainer = document.querySelector('.buttons-container')
+  const button = document.createElement('button');
+  button.innerHTML = string;
+  const buttonId = button.setAttribute('id', 'btn-holiday');
+
+  buttonContainer.appendChild(button);
+}
+
+buttonCreate('Feriados');
