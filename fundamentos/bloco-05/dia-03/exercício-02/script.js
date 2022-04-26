@@ -51,3 +51,14 @@ function buttonCreate(string) {
 }
 
 buttonCreate('Feriados');
+
+const buttonEvent = document.getElementById('btn-holiday');
+
+buttonEvent.addEventListener ('click', function() {
+  const holidays = document.getElementsByClassName('holiday');
+  for (let index = 0 ; index < holidays.length ; index += 1){
+    let holidaysColor = holidays[index].style.backgroundColor;
+    let holidaysColorCheck 
+    if ()
+  }
+})
