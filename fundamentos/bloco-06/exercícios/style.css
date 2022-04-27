@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(59, 59, 59);
+  background-color: rgb(225, 228, 231);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#header h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+#header p {
+  font-size: 25px;
+  text-align: center;
+}
+
+#header {
+  padding: 30px 0;
+}
+
+#form {
+  padding: 20px;
+  width: 600px;
+  height: 430px;
+  border: 1px rgb(192, 192, 192) solid;
+  margin: 20px auto;
+  background-color: rgb(252, 252, 252);
+}
+
+.input {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input input[type=text] {
+  padding: 5px 10px ;
+  font-size: 20px;
+}
+
+.input input[type=email] {
+  padding: 5px 10px ;
+  font-size: 20px;
+}
+.input p{
+  font-size: 20px;
+}
+
+.input input[type=radio] {
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+label {
+  font-size: 18px;
+  font-size: 20px;
+}
+
+.input textarea {
+  width: 80%;
+  margin-top: 10px;
+  padding: 5px 5px;
+  font-size: 16px;
+}
+
+.input input[type=date] {
+  padding: 5px;
+  font-size: 20px;
+}
+
+
+.checkboxes {
+  display: block;
+}
+
+.button {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: x-large;
+}
+
