@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário de Viagem</title>
+</head>
+<body>
+  <header id="header">
+    <h1>A viagem dos seus sonhos!</h1>
+    <p>Preencha o formulário abaixo para concorrer a uma viagem inesquecível!</p>
+  </header>
+  <main id="main">
+    <form action="" method="get" id="form">
+      <div class="input">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="input">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"  >
+      </div>
+      <div class="input">
+        <p>Escolha o seu local de destino:</p>
+        <input type="radio" name="trip" value="usa" id="trip-1">
+        <label for="trip-1">EUA</label>
+        <input type="radio" name="trip" value="fr" id="trip-2">
+        <label for="trip-2">França</label>
+        <input type="radio" name="trip" value="en" id="trip-3">
+        <label for="trip-3">Inglaterra</label>
+        <input type="radio" name="trip" value="ch" id="trip-4">
+        <label for="trip-4">China</label>
+      </div>
+      <div class="input">
+        <p>Digite aqui o porquê você deveria ganhar essa viagem:</p>
+        <textarea name="description"></textarea>
+      </div>
+      <div class="input">
+        <label for="date">Data:</label>
+        <input type="date" name="date" id="date">
+      </div>
+      <div class="input">
+        <div class="checkboxes">
+          <label for="check1">Concordo com os termos*</label>
+          <input type="checkbox" name="check1" id="check1">
+        </div>
+        <div class="checkboxes">
+          <label for="check2">Não ficarei de choro caso perca*</label>
+          <input type="checkbox" name="check2" id="check2">
+        </div>
+      </div>
+      <div class="input">
+        <button type="submit" class="button">Salvar</button>
+        <button type="reset" class="button">Apagar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
