@@ -15,7 +15,8 @@ body {
 }
 
 article {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 h1 {
@@ -24,19 +25,17 @@ h1 {
 }
 
 h2 {
-
+  text-align: center;
 }
 
 img {
 	max-width: 100%;
 }
 
-main {
-
-}
-
 section {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 figure {
@@ -45,5 +44,35 @@ figure {
 }
 
 figcaption {
-  font-size: .8em;
+  font-size: 1.8em;
+}
+
+@media (min-width: 700px) {
+  body {
+    margin: 0 20px;
+  }
+
+  article {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  section {
+    flex-wrap: wrap;
+    max-height: 1900px;
+    align-content: center;
+  }
+
+  figure {
+    padding: 0 5px;
+  }
 }
