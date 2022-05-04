@@ -12,6 +12,7 @@
 
 body {
   margin: 0 30px;
+  margin: auto;
 }
 
 article {
@@ -47,7 +48,7 @@ figcaption {
   font-size: 1.8em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (max-width: 1400px) {
   body {
     margin: 0 20px;
   }
@@ -74,5 +75,38 @@ figcaption {
 
   figure {
     padding: 0 5px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-color: rgb(250, 234, 212);
+    max-width: 80%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  article {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  figure {
+    flex-basis: 30%;
   }
 }
