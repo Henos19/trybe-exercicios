@@ -1,0 +1,112 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+ html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 30px;
+  margin: auto;
+}
+
+article {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure {
+	margin: 0;
+  padding-bottom: 30px;
+}
+
+figcaption {
+  font-size: 1.8em;
+}
+
+@media (min-width: 700px) and (max-width: 1400px) {
+  body {
+    margin: 0 20px;
+  }
+
+  article {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  section {
+    flex-wrap: wrap;
+    max-height: 1900px;
+    align-content: center;
+  }
+
+  figure {
+    padding: 0 5px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-color: rgb(250, 234, 212);
+    max-width: 80%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  article {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  figure {
+    flex-basis: 30%;
+  }
+}
