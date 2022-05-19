@@ -85,9 +85,7 @@ function averageAge(listOfBooks) {
 
 function getLongestNamedBook(listOfBooks) {
   // escreva seu código aqui
-  return listOfBooks.reduce((longestBook, actualBook) => {
-    return actualBook.name.length > longestBook.length ? actualBook.name : longestBook;
-  }, '');
+  return listOfBooks.reduce((longestBook, actualBook) => actualBook.name.length > longestBook.length ? actualBook.name : longestBook, '');
 }
 
 console.log(getLongestNamedBook(books));
