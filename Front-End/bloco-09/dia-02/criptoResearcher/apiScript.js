@@ -1,12 +1,18 @@
-const fetch = require('node-fetch');
+const list = document.getElementById('criptoList');
 
 function getTheValuesAndNames(info) {
-  console.log('Cripto name and its price in dolars:\n')
-  let count = 0;
-  const formatedCriptoInfo = info.data.forEach(({ id, priceUsd }) => {
-    count += 1;
-    if (count < 10) console.log(`${id} is costing US$ ${parseFloat(priceUsd).toFixed(2).replace('.', ',')}`);
-  });
+  const formatedCriptoInfo = info.data.map(({ id, symbol, priceUsd }) => `${id.toUpperCase()}(${symbol}) is costing US$ ${parseFloat(priceUsd).toFixed(2).replace('.', ',')}`);
+  return formatedCriptoInfo.slice(0, 10);
+}
+
+function addInfo(criptoInfo) {
+  criptoInfo.forEach(info => {
+    const newInfo = document.createElement('li');
+    newInfo.style.margin = '5px'
+    newInfo.style.fontSize = '25px'
+    newInfo.innerHTML = info;
+    list.appendChild(newInfo);
+  })
 }
 
 function getTheCriptos() {
@@ -14,7 +20,9 @@ function getTheCriptos() {
 
   fetch(url)
     .then((response) => response.json())
-    .then(getTheValuesAndNames);
+    .then(getTheValuesAndNames)
+    .then(addInfo)
+    .catch((error) => console.log(error))
 }
 
 getTheCriptos();
