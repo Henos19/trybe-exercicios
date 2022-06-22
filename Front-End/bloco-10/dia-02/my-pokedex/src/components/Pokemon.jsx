@@ -12,7 +12,7 @@ class Pokemon extends React.Component {
             <li>Average weight: {averageWeight.value} {averageWeight.measurementUnit}</li>
           </ul>
         </div>
-        <img src={image} alt={name} />
+        <img src={image} alt={name} className="pokemonImage"/>
       </section>
     )
   }
